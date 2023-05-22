@@ -59,7 +59,7 @@
       <section class="section-one">
         <div class="container">
           <h1 class="title-one">Effective Solutions for Your Business</h1>
-          <button class="button-one" type="button">Order Service</button>
+          <button class="button-one" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- Section-2 -->
@@ -523,8 +523,14 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop modal">
-      <button type="button" class="modal-close-btn"></button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal"><button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon">
+            <use href="./images/icons.svg#icon-icon-close"></use>
+          </svg>
+        </button></div>
+        
+      </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
