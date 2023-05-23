@@ -639,8 +639,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.overlay:hover,
-.overlay:focus {
+.link-portfolio:hover .overlay,
+.link-portfolio:focus .overlay {
   transform: translate(0, 0);
 }
 
