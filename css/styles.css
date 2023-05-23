@@ -76,7 +76,7 @@ img {
   letter-spacing: 0.02em;
   color: #404bbf;
   padding: 24px 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -283,6 +283,7 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: var(--social-media-link-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -351,6 +352,7 @@ button {
   padding: 16px 32px;
   min-width: 169px;
   margin: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-one:hover,
 .button-one:focus {
@@ -391,6 +393,8 @@ button {
   align-items: center;
   justify-content: center;
   color: var(--customer-link-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-link:hover,
 .customer-link:focus {
@@ -448,6 +452,7 @@ button {
   height: 100%;
   background-color: var(--footer-link);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link-ft:hover,
 .social-list-link-ft:focus {
@@ -491,17 +496,23 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity 500ms linear visability 500 ms linear;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
+  width: 408px;
+  min-height: 584px;
   background-color: #ffffff;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -512,18 +523,35 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
   height: 24px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-close-icon {
+  width: 8px;
+  height: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+  fill: #ffffff;
 }
 
 /* Portfolio */
