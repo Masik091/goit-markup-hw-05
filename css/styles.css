@@ -549,6 +549,8 @@ button {
 }
 .modal-close-icon: hover,
 .modal-close-icon: focus {
+  border: none;
+  background-color: #404bbf;
   fill: #ffffff;
 }
 
