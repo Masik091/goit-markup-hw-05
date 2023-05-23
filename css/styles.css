@@ -641,7 +641,7 @@ button {
 }
 .overlay:hover,
 .overlay:focus {
-  transform: translateY(0);
+  transform: translate(0%, 0%);
 }
 
 .portfolio-picture-wrapper {
